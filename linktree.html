@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+   <div class="container">
+    <i class='bx bxs-sun' id="icon"></i>
+        <img src="image/serious.jpg" alt="person image" class="image" ><br>
+    <div class="text">
+    <p> Hi I'm Jeff</p>
+    <p> <span class="bmw">Am web designer</span> & graphic designer</p>
+</div>
+    <!--all about-->
+    <div class="btn">
+    <h3 class="bmw">My Social Account</h3>
+    <button> <a href="http://127.0.0.1:5502/My%20portfolio.html">My portfolio</a></button>
+    <br>
+    <button><a href="https://www.facebook.com/profile.php?id=100093311740429">Facebook</a></button>
+    <br>
+   <button> <a href="https://github.com/jeffnganga/visual-studios">Github</a></button>
+    <!--my cv-->
+    <div class="btn">
+        <div class="bt">
+        <h3 class="bmw">My Cv</h3>
+        <button><a href="" download>Download CV</a></button>    
+    </div>
+</div>
+   </div> <br>
+   <div class="nne">
+    <h3 class="bmw">Reach Out</h3>
+    <form action="https://api.web3forms.com/submit" method="POST" id="send">
+        <input type="text" name="full name" placeholder="Fullname" class="pin" > <br><br>
+        <input type="email" name="email" placeholder="email" class="pin"><br>
+        <br>
+        <textarea class="ajay" name="message" style="width:180px; height:80px;" name="comments,&nbsp;questions" placeholder="Say something..."></textarea>
+       <br>
+        <button class="send" onclick="submitForm()">Submit</button>
+    </form>
+   </div>
+   <!--chat-->
+   <button class="open-btn" onclick="openChat()"><span class="pap">1</span><i class='bx bxs-comment'></i></button>
+   <div class="chat-pop" id="chat-form-container">
+    <form id="chatForm"  method="POST" class="form-container">
+        <div class="chat-window-head">
+            <h4><i class='bx bxs-comment'></i>Chat Jeff</h4>
+            <span class="close-btn" onclick="closechat()">
+                <i class='bx bx-x'></i>
+            </span>
+        </div>
+        <div class="msg-container">
+        <div class="msg"> 
+            <p>Hey, how may i help you?</p>
+             <p >08:28Am</p>
+            
+        </div>
+    </div>   
+    <div class="chat-box-container">
+        <div class="chat-box">
+            <input type="text" placeholder="Type your message...." name="msg" required>
+            <button type="submit" class="btn" onclick="submitForm()"><i class='bx bxs-comment'></i></button>
+        </div>
+    </div>
+    </form>
+   </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
